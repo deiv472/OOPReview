@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var mobile_1 = require("./mobile");
+var mobileLibrary_1 = require("./mobileLibrary");
+var nokia3210 = new mobile_1.Mobile("Nokia", 3210, "N3210", 3, "Rojo", false, 45, 125);
+var iphone3G = new mobile_1.Mobile("Iphone", 6, "I6", 16, "White", true, 25, 255);
+var samsungG10 = new mobile_1.Mobile("Samsung", 10, "Glaxy10", 256, "Black", true, 125, 1259);
+var lg360 = new mobile_1.Mobile("Lg", 360, "LG36", 16, "Blue", true, 5, 255);
+var pack1 = [nokia3210, iphone3G, samsungG10, lg360];
+var packML = new mobileLibrary_1.MobileLibrary("Ofertas Primavera", "Centro Comercial Xanadú", pack1);
+console.log(packML.getLocation());
+console.log(packML.getMobiles());
+console.log(packML.getName());
+packML.setLocation("Calle Capitán Blanco Algibay 33");
+packML.setName("Ofertas Sky Madrid");
+console.log(packML.getLocation());
+console.log(packML.getName());
