@@ -14,3 +14,5 @@ console.log("\n");
 console.log("Nombre "+iphone3G.name+"\n"+"Modelo- "+iphone3G.model+"\n"+"TradeMark- "+iphone3G.trademark+"\n"+"Memoria- "+iphone3G.sdSize+"\n"+"Color"+iphone3G.color+"\n"+"5G- "+iphone3G.is5G+"\n"+"Cámara- "+iphone3G.cameraNumber+"\n"+"Precio- "+iphone3G.price+" €");
 console.log("\n");
 console.log("Nombre "+samsungG10.name+"\n"+"Modelo- "+samsungG10.model+"\n"+"TradeMark- "+samsungG10.trademark+"\n"+"Memoria- "+samsungG10.sdSize+"\n"+"Color"+samsungG10.color+"\n"+"5G- "+samsungG10.is5G+"\n"+"Cámara- "+samsungG10.cameraNumber+"\n"+"Precio- "+samsungG10.price+" €");
+
+
