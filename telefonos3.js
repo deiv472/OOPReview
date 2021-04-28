@@ -8,10 +8,11 @@ var samsungG10 = new mobile_1.Mobile("Samsung", 10, "Glaxy10", 256, "Black", tru
 var lg360 = new mobile_1.Mobile("Lg", 360, "LG36", 16, "Blue", true, 5, 255);
 var pack1 = [nokia3210, iphone3G, samsungG10, lg360];
 var packML = new mobileLibrary_1.MobileLibrary("Ofertas Primavera", "Centro Comercial Xanadú", pack1);
-console.log(packML.getLocation());
-console.log(packML.getMobiles());
-console.log(packML.getName());
-packML.setLocation("Calle Capitán Blanco Algibay 33");
-packML.setName("Ofertas Sky Madrid");
-console.log(packML.getLocation());
-console.log(packML.getName());
+// console.log(packML.getLocation());
+// console.log(packML.getMobiles());
+// console.log(packML.getName());
+// packML.setLocation("Calle Capitán Blanco Algibay 33");
+// packML.setName("Ofertas Sky Madrid");
+// console.log(packML.getLocation());
+// console.log(packML.getName());
+console.log(packML.printLibrary());

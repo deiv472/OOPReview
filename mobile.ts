@@ -98,7 +98,7 @@ export class Mobile {
     //Metodos publicos
 
     public printPhones():void{
-        console.log(`Name: ${this.name}\nModel: ${this.model}\nTradeMark: ${this.trademark}\nSD Size (GB): ${this.sdSize}\nColor: ${this.color}\nIs 5G?: ${this.is5G}\nNumber of Cameras: ${this.cameraNumber}\n`);
+        console.log(`Name: ${this.name}\nModel: ${this.model}\nTradeMark: ${this.trademark}\nSD Size (GB): ${this.sdSize}\nColor: ${this.color}\nIs 5G?: ${this.is5G}\nNumber of Cameras: ${this.cameraNumber}\nPrice: ${this.price} €`);
         
     }
 

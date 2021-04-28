@@ -67,7 +67,7 @@ var Mobile = /** @class */ (function () {
     };
     //Metodos publicos
     Mobile.prototype.printPhones = function () {
-        console.log("Name: " + this.name + "\nModel: " + this.model + "\nTradeMark: " + this.trademark + "\nSD Size (GB): " + this.sdSize + "\nColor: " + this.color + "\nIs 5G?: " + this.is5G + "\nNumber of Cameras: " + this.cameraNumber + "\n");
+        console.log("Name: " + this.name + "\nModel: " + this.model + "\nTradeMark: " + this.trademark + "\nSD Size (GB): " + this.sdSize + "\nColor: " + this.color + "\nIs 5G?: " + this.is5G + "\nNumber of Cameras: " + this.cameraNumber + "\nPrice: " + this.price + " \u20AC");
     };
     return Mobile;
 }());

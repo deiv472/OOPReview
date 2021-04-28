@@ -13,6 +13,7 @@ export class MobileLibrary{
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
 
     //metodos getters y setters
@@ -50,7 +51,7 @@ export class MobileLibrary{
     /********************************************* */
     //Metodos
 
-    public totalPriceCalculation():number{
+    private totalPriceCalculation():number{
 
         let totalPrice:number = 0;//creo la variable donde guardo el resultado, inicializado a 0
 
@@ -61,6 +62,22 @@ export class MobileLibrary{
         return totalPrice;//retorno la variabel con su nuevo valor.
 
     }
+
+    public printLibrary():void{
+
+        console.log(`\n***************************************`);  
+        console.log("\n"+"This is all my mobiles"+"\n");  
+        console.log(`***************************************`);      
+
+        for(let i=0;i<this.mobiles.length;i++){
+
+            console.log(`The Characteristics Of The Mobile ${this.mobiles[i].getName()} Are:\n`);
+            console.log(`\n${this.mobiles[i].printPhones()}\n`);
+            console.log(`***************************************`);
+        }
+        console.log(`Price overall: ${this.totalPrice} €`);
+        console.log(`***************************************`);
+   }
 
 
 

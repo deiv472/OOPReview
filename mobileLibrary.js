@@ -6,6 +6,7 @@ var MobileLibrary = /** @class */ (function () {
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
     //metodos getters y setters
     MobileLibrary.prototype.getName = function () {
@@ -38,6 +39,18 @@ var MobileLibrary = /** @class */ (function () {
             totalPrice += this.mobiles[i].getPrice(); //en la variable creada al principio recojo el resultado de 
         } //sumar, dentro de getPrice, todos los elemntos "price"
         return totalPrice; //retorno la variabel con su nuevo valor.
+    };
+    MobileLibrary.prototype.printLibrary = function () {
+        console.log("\n***************************************");
+        console.log("\n" + "This is all my mobiles" + "\n");
+        console.log("***************************************");
+        for (var i = 0; i < this.mobiles.length; i++) {
+            console.log("The Characteristics Of The Mobile " + this.mobiles[i].getName() + " Are:\n");
+            console.log("\n" + this.mobiles[i].printPhones() + "\n");
+            console.log("***************************************");
+        }
+        console.log("Price overall: " + this.totalPrice + " \u20AC");
+        console.log("***************************************");
     };
     return MobileLibrary;
 }());
